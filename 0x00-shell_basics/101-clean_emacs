@@ -1,2 +1,2 @@
 #!/bin/bash
-shopt -s extglob; rm -f *~
+find . -type f -name '*~' -exec rm {} \+
