@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$current_directory" -name "*~" -type f -exec rm -f {} \;
+shopt -s extglob; rm -f *~
