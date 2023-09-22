@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=water;obase=bestchol;${WATER}+${STIR}" | bc
+printf "%d\n" $((36#${WATER} + 36#${STIR})) | tr '0-9A-Z' 'a-z'
